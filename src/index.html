@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de CDT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de CDT</h1>
+
+    <label for="capital">Capital Inicial (COP):</label>
+    <input type="number" id="capital" placeholder="Ej: 1000000">
+
+    <label for="tasa">Tasa de Interés Anual (%):</label>
+    <input type="number" id="tasa" placeholder="Ej: 12">
+
+    <label for="tiempo">Tiempo (años):</label>
+    <input type="number" id="tiempo" placeholder="Ej: 2">
+
+    <label for="tipo">Tipo de Interés:</label>
+    <select id="tipo">
+      <option value="simple">Simple</option>
+      <option value="compuesto">Compuesto</option>
+    </select>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div class="resultado">
+      <h2>Resultado</h2>
+      <p id="montoFinal"></p>
+      <p id="interesGanado"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
